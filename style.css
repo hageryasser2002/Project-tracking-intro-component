@@ -1,0 +1,265 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.special{
+    font-family: "Barlow Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    display: inline;
+    margin-inline: 2rem;
+
+}
+body {
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9rem;
+    overflow-x: hidden;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.right {
+    width: 60%;
+}
+
+.right img {
+    position: relative;
+    left: 5rem;
+}
+
+.br {
+    border: 2px solid red;
+}
+
+nav {
+    max-width: 95%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 9rem;
+}
+
+li {
+    font-family: "Barlow Condensed", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    display: inline;
+    margin-inline: 2rem;
+}
+
+.new {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    height: 1.7rem;
+    margin-right: 1rem;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+}
+
+.last {
+    background-color: hsl(0, 100%, 68%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+
+.capt,
+h1,
+.last,
+.new {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.capt,
+.p {
+    font-family: "Barlow", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Barlow Condensed", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+.last:hover,
+li:hover {
+    cursor: pointer;
+}
+
+.colo {
+    background-color: hsl(207, 33%, 95%);
+    width: 50%;
+    height: 20rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 0 0 2rem;
+    z-index: -1;
+}
+
+.navList,.menu {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+.none{
+    display: none;
+}
+@media screen and (max-width: 750px) {
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    html {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 100%;
+        margin-left: 2rem;
+        overflow-x: hidden;
+        
+    }
+
+    .row {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 15rem;
+    }
+
+    nav {
+        max-width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2rem;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .right img {
+        position: relative;
+        height: 80%;
+        left: 0.2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    span, p {
+        font-size: 0.8rem;
+    }
+
+    .capt, h1, .last, .new {
+        letter-spacing: 1px;
+    }
+
+    .colo {
+        height: 23rem;
+    }
+
+    .menu {
+        display: block;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navList {
+        background-color: white;
+        width: 80%;
+        margin-right: 1rem;
+        position: absolute;
+        top: 5rem;
+        padding: 2rem;
+       
+    }
+    hr{
+        width: 100%;
+        margin: 1rem;
+    }
+    .navList p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: black;
+    }
+}
